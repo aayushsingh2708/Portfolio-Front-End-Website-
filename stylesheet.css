@@ -1,0 +1,326 @@
+
+.b{
+	background-color: #F8F8FF;
+	margin: 0
+}
+
+/*-------------------HEADER-------------------*/
+
+.header{
+	position: fixed;
+    width: 100%;
+	height: 95px;
+}
+#menuimg{
+	float: left;
+	width: 70px;
+	height: 73px;
+}
+#headerleft{
+	float: left;
+	width: 15%;
+	text-align: center;
+	background-color: #4682B4;
+	color: #B0C4DE;
+	padding: 0% 1%;
+}
+#cv{
+	float: left;
+	width: 65%;
+	height: 94px;
+	color: #4682B4;
+	background-color: #B0C4DE;
+	text-align: center;
+	padding: 0% 1%;
+	font-size: 20px;
+}
+#headerright{
+	float: left;
+	width: 14%;
+	text-align: center;
+	background-color: #4682B4;
+	color: #B0C4DE;
+	padding: 0% 1%;
+}
+
+.footer{
+	width: 100%;
+	height: 110px;
+	background-color: darkgrey;
+}
+
+#footerCenter{
+	text-align: center;
+	float: left;
+	padding-top: 2%;
+	width: 50%;
+}
+
+#footerLeft{
+	width: 23%;
+	height: 110px;
+	color: black;
+	padding-left: 2%;
+	text-align: left;
+	float: left;
+	font-size: 12px;
+}
+
+span a{
+  text-decoration: none;
+}
+
+span a:hover{
+  color: red;
+}
+
+#footerRight{
+	width: 23%;
+	height: 110px;
+	color: black;
+	padding-left: 2%;
+	text-align: left;
+	float: left;
+	font-size: 12px;
+}
+
+#footerRight a{
+  text-decoration: none;
+}
+
+#footerRight a:hover{
+  color: red;
+}
+
+
+/*------------------DROPDOWN------------------*/
+
+.dropdown{
+	position: relative;
+	display: inline-block;
+	float: left;
+	height: 70px;
+	width: 70px;
+}
+.dropbutton{
+	cursor: pointer;
+}
+.dropmenu{
+	display: none;
+	position: absolute;
+	z-index: 1;
+	background-color: darkgray;
+	width: 150px;
+	border: 1px solid black;
+	border-collapse: collapse;
+	letter-spacing: 0;
+	word-spacing: 0;
+}
+.dropdown:hover .dropmenu{
+	display: block;
+}
+.dropmenu a{
+	text-decoration: none;
+	width: 150px;
+	padding: 3px 0px;
+}
+.dropmenu a:hover{
+	color: red;
+}
+
+
+
+/*------------------LEFT COLUMN---------------*/
+
+.row:after, .header:after, .footer:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+#left{
+	margin-top: 70px;
+	padding: 1% 2% 1% 1%;
+	width: 55%;
+	text-align: left;
+	height: 100%;
+	float: left;
+	margin-left: 10%;
+}
+
+/*----------------RIGHT COLUMN----------------*/
+
+#right{
+	margin-top: 92px;
+	width: 20%;
+	text-align: left;
+	height: 100%;
+	float: left;
+}
+/*-------------------GENERAL------------------*/
+
+.leftinfo{
+	margin-left: 5%;
+}
+table{
+   width: 90%;
+}
+table, th, td {
+	  border: 1px solid black;
+}
+h3{
+	text-align: left;
+	color: blue;
+}
+.link a{
+ text-decoration: none;
+}
+.link a:hover{
+  color:red;
+}
+.subInfo{
+  font-size: 14px;
+}
+
+.subInfo a{
+   text-decoration: none;
+	 color: black;
+}
+
+.subInfo a:hover{
+   color: red;
+}
+.info{
+	margin-left: 5%;
+}
+.skills{
+	width: 46%;
+	float: left;
+	padding: 0% 2%;
+}
+
+/*------------------RESPONSIVE----------------*/
+
+
+@media only screen and (min-width: 615px){
+	.dropdown{
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 450px){
+	.responsive{
+		display:none;
+	}
+}
+
+@media only screen and (min-width: 300px){
+	.notValid{
+		display: none;
+	}
+}
+
+/*--------------------------------------------*/
+
+@media only screen and (max-width: 800px){
+	#cv{
+		font-size: 18px;
+	}
+	.footer{
+	max-height: 110px;
+}
+
+#footerCenter, #footerRight, #footerLeft{
+	 font-size: 8px;
+ }
+}
+
+@media only screen and (max-width: 615px){
+	.header{
+		background-color: #B0C4DE;
+		max-height: 79px;
+	}
+	#cv{
+		max-height: 79px;
+		font-size: 16px;
+		margin-left: 10%;
+	}
+	#headerleft, #headerright{
+		display: none;
+	}
+	.footer{
+	max-height: 110px;
+}
+ #footerCenter, #footerRight, #footerLeft{
+		font-size: 8px;
+	}
+	#left{
+		margin-left: 0px;
+		width: 65%;
+	}
+	#right{
+		margin-right: 0px;
+		width: 30%;
+	}
+}
+
+@media only screen and (max-width: 530px){
+	.header{
+		text-align: center;
+	}
+	#cv{
+		font-size: 14px;
+	}
+	.footer{
+	max-height: 110px;
+}
+	#footerCenter, #footerRight, #footerLeft{
+		font-size: 7px;
+	}
+	#left{
+		margin-left: 0px;
+		width: 65%;
+	}
+	#right{
+		margin-right: 0px;
+		width: 30%;
+	}
+
+}
+
+@media only screen and (max-width: 450px){
+	.header{
+		text-align: center;
+		height: 89px;
+	}
+	#cv{
+		font-size: 12px;
+	}
+	.footer{
+	    width: 100%;
+	max-height: 110px;
+}
+#footerCenter, #footerRight, #footerLeft{
+		font-size: 6px;
+	}
+	#menuimg{
+		float: left;
+		width: 60px;
+		height: 73px;
+	}
+	#left{
+		margin-left: 0px;
+		width: 100%;
+	}
+	#right{
+		display: none;
+	}
+	#leftinfo{
+		margin-left: 2%;
+	}
+}
+
+@media only screen and (max-width: 300px){
+	.header, .row{
+		display: none;
+	}
+}
